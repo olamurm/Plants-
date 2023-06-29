@@ -180,6 +180,8 @@ a {
     display: none;
 }
 
+
+
 // ==== solution
 .solution {
     position: relative;
@@ -188,6 +190,12 @@ a {
     // justify-content: flex-start;
 
     background: $main-gradient-1-color;
+}
+
+.solution-container {
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .bgi-bg {
@@ -309,6 +317,7 @@ a {
     padding-right: 5px;
 }
 
+
 // =====services=======
 .services {
     max-width: 375px;
@@ -316,7 +325,7 @@ a {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 50px 20px 0 2px;
+    padding: 50px 20px 0 20px;
 
 }
 
@@ -326,7 +335,6 @@ a {
     padding-bottom: 30px;
 
     h2 {
-
         /* Mobile Font / H1 / Bold */
         font-size: 28px;
         font-style: normal;
@@ -351,10 +359,13 @@ a {
 }
 
 .services-card {
+    width: 100%;
     color: $heading-font-color;
     background-image: url(images/service-card.svg);
     background-repeat: no-repeat;
     background-size: 112px;
+    background-position-x: left;
+    background-position-y: center;
     box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.15);
     padding: 20px;
     border-radius: 10px;
@@ -371,6 +382,7 @@ a {
     background-size: 50px 50px;
     background-repeat: no-repeat;
     background-position-y: center;
+    background-position-x: left;
     padding-left: 70px;
 
     h5 {
@@ -700,48 +712,48 @@ a {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
-
-.services-card {
-    color: $heading-font-color;
-    background-image: url(images/service-card.svg);
-    background-repeat: no-repeat;
-    background-size: 176px;
-    background-position-y: top;
-    background-position-x: center;
-    padding: 50px;
-    width: 330px;
-    height: 366px;
-
-    &:hover {
-        background-color: $main-1-color;
-        color: $color-white;
-    }
 
 
-}
+    .services-card {
+        color: $heading-font-color;
+        background-image: url(images/service-card.svg);
+        background-repeat: no-repeat;
+        background-size: 176px;
+        background-position-y: top;
+        background-position-x: center;
+        padding: 50px;
+        width: 330px;
+        height: 366px;
 
-.card-content {
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: top;
-    padding-top: 120px;
-    text-align: center;
-    padding-left: 0;
+        &:hover {
+            background-color: $main-1-color;
+            color: $color-white;
+        }
 
-    h5 {
-        text-align: center;
-        /*/H5/Bold */
-        font-size: 24px;
-        padding-bottom: 10px;
-    }
 
-    p {
-        /* /H6/Regular */
+        .card-content {
+            background-size: 70px 70px;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: top;
+            padding-top: 120px;
+            text-align: center;
+            padding-left: 0;
 
-        font-family: "Poppins", sans-serif;
-        font-size: 16px;
-        line-height: 28px;
+            h5 {
+                text-align: center;
+                /*/H5/Bold */
+                font-size: 24px;
+                padding-bottom: 10px;
+            }
+
+            p {
+                /* /H6/Regular */
+
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
     }
 }

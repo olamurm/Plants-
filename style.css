@@ -176,6 +176,12 @@ a {
   background: linear-gradient(61deg, rgba(0, 115, 12, 0.81) 0.01%, rgba(251, 246, 238, 0) 75.75%);
 }
 
+.solution-container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .bgi-bg {
   width: 375px;
   margin: 0 auto;
@@ -297,7 +303,7 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 50px 20px 0 2px;
+  padding: 50px 20px 0 20px;
 }
 
 .services-header {
@@ -328,10 +334,13 @@ a {
 }
 
 .services-card {
+  width: 100%;
   color: rgb(33, 37, 41);
   background-image: url(images/service-card.svg);
   background-repeat: no-repeat;
   background-size: 112px;
+  background-position-x: left;
+  background-position-y: center;
   box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.15);
   padding: 20px;
   border-radius: 10px;
@@ -345,6 +354,7 @@ a {
   background-size: 50px 50px;
   background-repeat: no-repeat;
   background-position-y: center;
+  background-position-x: left;
   padding-left: 70px;
 }
 .card-content h5 {
@@ -611,41 +621,40 @@ a {
     flex-wrap: wrap;
     justify-content: center;
   }
-}
-.services-card {
-  color: rgb(33, 37, 41);
-  background-image: url(images/service-card.svg);
-  background-repeat: no-repeat;
-  background-size: 176px;
-  background-position-y: top;
-  background-position-x: center;
-  padding: 50px;
-  width: 330px;
-  height: 366px;
-}
-.services-card:hover {
-  background-color: rgb(0, 115, 12);
-  color: white;
-}
-
-.card-content {
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: top;
-  padding-top: 120px;
-  text-align: center;
-  padding-left: 0;
-}
-.card-content h5 {
-  text-align: center;
-  /*/H5/Bold */
-  font-size: 24px;
-  padding-bottom: 10px;
-}
-.card-content p {
-  /* /H6/Regular */
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 28px;
+  .services-card {
+    color: rgb(33, 37, 41);
+    background-image: url(images/service-card.svg);
+    background-repeat: no-repeat;
+    background-size: 176px;
+    background-position-y: top;
+    background-position-x: center;
+    padding: 50px;
+    width: 330px;
+    height: 366px;
+  }
+  .services-card:hover {
+    background-color: rgb(0, 115, 12);
+    color: white;
+  }
+  .services-card .card-content {
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    padding-top: 120px;
+    text-align: center;
+    padding-left: 0;
+  }
+  .services-card .card-content h5 {
+    text-align: center;
+    /*/H5/Bold */
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  .services-card .card-content p {
+    /* /H6/Regular */
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+  }
 }/*# sourceMappingURL=style.css.map */
