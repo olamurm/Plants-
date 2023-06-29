@@ -223,10 +223,6 @@ a {
   line-height: 30px;
 }
 
-.color-green {
-  color: rgb(0, 115, 12);
-}
-
 .solution__buttons {
   padding-top: 40px;
   max-width: 375px;
@@ -278,25 +274,28 @@ a {
 }
 
 .sol-low-btn {
-  width: 130px;
   height: 25px;
   border-radius: 30px;
   background: linear-gradient(180deg, rgb(255, 248, 241), rgb(203, 229, 206));
   text-align: center;
   line-height: 25px;
-  font-size: 11px;
+  font-size: 10px;
   display: flex;
   flex-direction: row;
+  padding: 0 10px;
 }
 
 .round-button {
   font-weight: 700;
-  padding: 0 5px;
+  padding-right: 5px;
 }
 
 @media (min-width: 1410px) {
   .desktop {
     display: block;
+  }
+  .color-green {
+    color: rgb(0, 115, 12);
   }
   .container {
     max-width: 1410px;
@@ -369,9 +368,10 @@ a {
   .navbar-item:hover:after {
     content: url(images/arrow-down-green.svg);
   }
-  .solution {
-    position: relatve;
-    display: flex;
+  .solution-container {
+    max-width: 1410px;
+    width: 100%;
+    margin: 0 auto;
   }
   .bgi-bg {
     position: absolute;
@@ -379,11 +379,75 @@ a {
     top: 0;
     width: 50%;
   }
-  .bgi-sm {
-    width: 200px;
-    margin-left: -250px;
+  .solution__text {
+    padding-top: 150px;
+    font-size: 18px;
+    margin: 0;
+    max-width: 600px;
   }
-  .solution__sub-heading {
+  .solution__text-heading {
+    font-size: 20px;
+    width: 560px;
+  }
+  .solution__text-heading h2 {
+    font-size: 58px;
+    line-height: normal;
+    padding: 20px 0;
+  }
+  .bgi-sm {
+    display: none;
+  }
+  .solution__buttons {
+    max-width: 600px;
+    margin: 0;
+  }
+  .solution__buttons--upper {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: left;
+    padding-left: 20px;
+  }
+  .sol-up-btn {
+    width: 175px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 58px;
+  }
+  .how-it-works {
+    color: rgb(103, 103, 103);
+    font-size: 18px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    color: rgb(33, 37, 41);
+    background-image: url(images/Arrow-rigth-Icon-gray.svg);
+  }
+  .how-it-works:hover {
+    color: rgb(0, 115, 12);
+    background-image: url(images/Arrow-rigth-Icon-green.svg);
+  }
+  .solution__buttons--lower {
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+  }
+  .sol-low-btn {
+    width: 150px;
+    background: none;
+    align-items: center;
+    text-align: left;
+    line-height: 25px;
     font-size: 16px;
+    font-weight: 700;
+    padding: 0 10px;
+    gap: 10px;
+  }
+  .round-button {
+    background: linear-gradient(180deg, rgb(255, 248, 241), rgb(203, 229, 206));
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 34px;
+    padding: 8px;
   }
 }/*# sourceMappingURL=style.css.map */
