@@ -8,8 +8,20 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
+.desktop {
+    display: none;
+}
+
+header span {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color-white;
+}
+
 .container {
-    // width: min(100% - 40px, 1000px);
     max-width: 375px;
     width: 100%;
     margin: 0 auto;
@@ -31,15 +43,6 @@ body {
     align-items: center;
 }
 
-header span {
-    display: none;
-}
-
-header a {
-    text-decoration: none;
-    color: $color-white;
-}
-
 .button {
     background-color: $main-1-color;
     border: 1px solid $main-1-color;
@@ -49,6 +52,7 @@ header a {
 
     &:hover {
         background-color: $color-white;
+        color: $main-1-color;
     }
 }
 
@@ -156,7 +160,7 @@ header a {
     width: 20px;
     height: 20px;
     background-image: url(images/phone-white.svg);
-    background-size: 20px 20px;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -166,7 +170,7 @@ header a {
     width: 30px;
     height: 30px;
     background-image: url(images/menu-1.svg);
-    background-size: 30px 30px;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -176,7 +180,149 @@ header a {
     display: none;
 }
 
+// ==== solution
+.solution {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-start;
+
+    background: $main-gradient-1-color;
+}
+
+.bgi-bg {
+    width: 375px;
+    margin: 0 auto;
+}
+
+.bgi-sm {
+    width: 83px;
+    position: absolute;
+    bottom: -10px;
+    margin-left: -10px;
+}
+
+.solution__text {
+    padding: 80px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: normal;
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 15px;
+    color: $paragraph-color;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.solution__text-heading {
+    display: flex;
+    flex-direction: column;
+    color: $heading-font-color;
+    font-size: 12px;
+    text-transform: capitalize;
+    width: 207px;
+
+    p:before {
+        content: url(images/Vector.svg);
+        padding-right: 5px;
+    }
+
+    h2 {
+        /* H2/Extra Bold */
+        font-size: 21px;
+        font-family: Nunito;
+        font-weight: 800;
+        line-height: 30px;
+    }
+}
+
+.color-green {
+    color: $main-1-color;
+}
+
+.solution__buttons {
+    padding-top: 40px;
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.solution__buttons--upper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.how-it-works {
+    color: $main-1-color;
+    background-image: url(images/Arrow-rigth-Icon-green.svg);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+    padding-right: 30px;
+}
+
+.how-it-works:hover {
+    color: $heading-font-color;
+    background-image: url(images/Arrow-rigth-Icon-gray.svg);
+}
+
+.sol-up-btn {
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    background: $main-1-color;
+    text-align: center;
+    line-height: 44px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.solution__buttons--lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 40px 20px;
+
+}
+
+.sol-low-btn {
+    width: 130px;
+    height: 25px;
+    border-radius: 30px;
+    background: $linear-gradient;
+    text-align: center;
+    line-height: 25px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: row;
+}
+
+.round-button {
+    font-weight: 700;
+    padding: 0 5px;
+}
+
+
+
+
+
+
+
+
 @media (min-width: 1410px) {
+    .desktop {
+        display: block;
+    }
+
     .container {
         max-width: 1410px;
         padding: 0;
@@ -269,4 +415,50 @@ header a {
     }
 
 
+    //====solution 
+
+    .solution {
+        position: relatve;
+        display: flex;
+
+
+    }
+
+    .bgi-bg {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 50%;
+    }
+
+    .bgi-sm {
+        width: 200px;
+        margin-left: -250px;
+    }
+
+    .solution__content {}
+
+    .solution__sub-heading {
+        font-size: 16px;
+    }
+
+    .solution__heading {}
+
+    .solution__text {}
+
+    .solution__buttons {}
+
+    .solution__buttons--upper {}
+
+    .button {}
+
+    .nav-btn {}
+
+    .solution__buttons--lower {}
+
+    .solution__buttons--bonus {}
+
+    .round-button {}
+
+    .desktop {}
 }

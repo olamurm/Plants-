@@ -6,6 +6,19 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+.desktop {
+  display: none;
+}
+
+header span {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .container {
   max-width: 375px;
   width: 100%;
@@ -26,15 +39,6 @@ body {
   align-items: center;
 }
 
-header span {
-  display: none;
-}
-
-header a {
-  text-decoration: none;
-  color: white;
-}
-
 .button {
   background-color: rgb(0, 115, 12);
   border: 1px solid rgb(0, 115, 12);
@@ -44,6 +48,7 @@ header a {
 }
 .button:hover {
   background-color: white;
+  color: rgb(0, 115, 12);
 }
 
 .addressbar {
@@ -144,7 +149,7 @@ header a {
   width: 20px;
   height: 20px;
   background-image: url(images/phone-white.svg);
-  background-size: 20px 20px;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -154,7 +159,7 @@ header a {
   width: 30px;
   height: 30px;
   background-image: url(images/menu-1.svg);
-  background-size: 30px 30px;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -164,7 +169,135 @@ header a {
   display: none;
 }
 
+.solution {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(61deg, rgba(0, 115, 12, 0.81) 0.01%, rgba(251, 246, 238, 0) 75.75%);
+}
+
+.bgi-bg {
+  width: 375px;
+  margin: 0 auto;
+}
+
+.bgi-sm {
+  width: 83px;
+  position: absolute;
+  bottom: -10px;
+  margin-left: -10px;
+}
+
+.solution__text {
+  padding: 80px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 15px;
+  color: rgb(103, 103, 103);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.solution__text-heading {
+  display: flex;
+  flex-direction: column;
+  color: rgb(33, 37, 41);
+  font-size: 12px;
+  text-transform: capitalize;
+  width: 207px;
+}
+.solution__text-heading p:before {
+  content: url(images/Vector.svg);
+  padding-right: 5px;
+}
+.solution__text-heading h2 {
+  /* H2/Extra Bold */
+  font-size: 21px;
+  font-family: Nunito;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.color-green {
+  color: rgb(0, 115, 12);
+}
+
+.solution__buttons {
+  padding-top: 40px;
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.solution__buttons--upper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.how-it-works {
+  color: rgb(0, 115, 12);
+  background-image: url(images/Arrow-rigth-Icon-green.svg);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right;
+  padding-right: 30px;
+}
+
+.how-it-works:hover {
+  color: rgb(33, 37, 41);
+  background-image: url(images/Arrow-rigth-Icon-gray.svg);
+}
+
+.sol-up-btn {
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  background: rgb(0, 115, 12);
+  text-align: center;
+  line-height: 44px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.solution__buttons--lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 40px 20px;
+}
+
+.sol-low-btn {
+  width: 130px;
+  height: 25px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgb(255, 248, 241), rgb(203, 229, 206));
+  text-align: center;
+  line-height: 25px;
+  font-size: 11px;
+  display: flex;
+  flex-direction: row;
+}
+
+.round-button {
+  font-weight: 700;
+  padding: 0 5px;
+}
+
 @media (min-width: 1410px) {
+  .desktop {
+    display: block;
+  }
   .container {
     max-width: 1410px;
     padding: 0;
@@ -235,5 +368,22 @@ header a {
   }
   .navbar-item:hover:after {
     content: url(images/arrow-down-green.svg);
+  }
+  .solution {
+    position: relatve;
+    display: flex;
+  }
+  .bgi-bg {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50%;
+  }
+  .bgi-sm {
+    width: 200px;
+    margin-left: -250px;
+  }
+  .solution__sub-heading {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
