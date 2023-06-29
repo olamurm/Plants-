@@ -19,7 +19,7 @@ a {
   color: white;
 }
 
-.container {
+.header-container {
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
@@ -283,6 +283,7 @@ a {
   display: flex;
   flex-direction: row;
   padding: 0 10px;
+  cursor: pointer;
 }
 
 .round-button {
@@ -290,12 +291,115 @@ a {
   padding-right: 5px;
 }
 
+.services {
+  max-width: 375px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 50px 20px 0 2px;
+}
+
+.services-header {
+  color: rgb(33, 37, 41);
+  text-align: center;
+  padding-bottom: 30px;
+}
+.services-header h2 {
+  /* Mobile Font / H1 / Bold */
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 15px;
+}
+.services-header p {
+  /* Mobile Font/H6/Regular */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.services-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.services-card {
+  color: rgb(33, 37, 41);
+  background-image: url(images/service-card.svg);
+  background-repeat: no-repeat;
+  background-size: 112px;
+  box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.card-content {
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 70px;
+}
+.card-content h5 {
+  text-align: left;
+  /* Mobile Font/H5/Bold */
+  font-size: 16px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.card-content p {
+  /* Mobile Font/H6/Regular */
+  font-size: 14px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.tree-planting {
+  background-image: url(images/Tree-Planting.svg);
+}
+
+.grass-cuttin {
+  background-image: url(images/Grass-Cutting.svg);
+}
+
+.garden-design {
+  background-image: url(images/Garden-Design.svg);
+}
+
+.plant-growing {
+  background-image: url(images/Plant-Growing.svg);
+}
+
+.flower-scaping {
+  background-image: url(images/Flower-Scaping.svg);
+}
+
+.branch-cutting {
+  background-image: url(images/Branch-cutting.svg);
+}
+
+.pests {
+  background-image: url(images/Pests.svg);
+}
+
+.watering {
+  background-image: url(images/Watering-Irrigation.svg);
+}
+
+.color-green {
+  color: rgb(0, 115, 12);
+}
+
 @media (min-width: 1410px) {
   .desktop {
     display: block;
-  }
-  .color-green {
-    color: rgb(0, 115, 12);
   }
   .container {
     max-width: 1410px;
