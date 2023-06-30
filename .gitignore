@@ -1,0 +1,9 @@
+# ignore logs folder
+#logs/
+# ignore any txt-files by mask
+#docs/*.txt
+node_modules/
+.csscomb.json
+gulpfile.js
+package-lock.json
+package.json
