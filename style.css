@@ -10,13 +10,17 @@ body {
   display: none;
 }
 
-header span {
-  display: none;
+.color-green {
+  color: rgb(0, 115, 12);
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+header span {
+  display: none;
 }
 
 .header-container {
@@ -169,6 +173,82 @@ a {
   display: none;
 }
 
+@media (min-width: 1410px) {
+  .desktop {
+    display: block;
+  }
+  .header-container {
+    max-width: 1410px;
+    padding: 0;
+  }
+  .navbar-top {
+    height: 60px;
+  }
+  .addressbar-bgi {
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;
+  }
+  header span {
+    display: block;
+  }
+  .selection {
+    width: 66px;
+    height: 25px;
+    font-size: 14px;
+    line-height: 25px;
+    background-size: 12px 6.5px;
+  }
+  .navbar-buttons {
+    width: 80%;
+  }
+  .navbar-phone {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .nav-btn {
+    display: flex;
+    justify-content: center;
+    order: 2;
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  .nav-btn:hover span {
+    background-color: white;
+    color: rgb(0, 115, 12);
+  }
+  .navbar-menu-btn {
+    display: none;
+  }
+  .navbar-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    order: 1;
+    color: rgb(33, 37, 41);
+    /* Button/Button Text */
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: capitalize;
+  }
+  .navbar-menu li:hover {
+    cursor: pointer;
+    color: rgb(0, 115, 12);
+  }
+  .navbar-item:after {
+    content: url(images/arrow-down-black.svg);
+    width: 12px;
+    height: 6.8px;
+  }
+  .navbar-item:hover:after {
+    content: url(images/arrow-down-green.svg);
+  }
+}
 .solution {
   position: relative;
   display: flex;
@@ -297,6 +377,91 @@ a {
   padding-right: 5px;
 }
 
+@media (min-width: 1410px) {
+  .solution-container {
+    max-width: 1410px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bgi-bg {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1013px;
+    height: 647px;
+  }
+  .solution__text {
+    padding-top: 150px;
+    font-size: 18px;
+    margin: 0;
+    max-width: 600px;
+  }
+  .solution__text-heading {
+    font-size: 20px;
+    width: 560px;
+  }
+  .solution__text-heading h2 {
+    font-size: 58px;
+    line-height: normal;
+    padding: 20px 0;
+  }
+  .bgi-sm {
+    display: none;
+  }
+  .solution__buttons {
+    max-width: 600px;
+    margin: 0;
+  }
+  .solution__buttons--upper {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: left;
+    padding-left: 20px;
+  }
+  .sol-up-btn {
+    width: 175px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 58px;
+  }
+  .how-it-works {
+    color: rgb(103, 103, 103);
+    font-size: 18px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    color: rgb(33, 37, 41);
+    background-image: url(images/Arrow-rigth-Icon-gray.svg);
+  }
+  .how-it-works:hover {
+    color: rgb(0, 115, 12);
+    background-image: url(images/Arrow-rigth-Icon-green.svg);
+  }
+  .solution__buttons--lower {
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+  }
+  .sol-low-btn {
+    width: 150px;
+    background: none;
+    align-items: center;
+    text-align: left;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 10px;
+    gap: 10px;
+  }
+  .round-button {
+    background: linear-gradient(180deg, rgb(255, 248, 241), rgb(203, 229, 206));
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 34px;
+    padding: 8px;
+  }
+}
 .services {
   max-width: 375px;
   width: 100%;
@@ -432,168 +597,7 @@ a {
   background-image: url(images/Watering-Irrigation-Active.svg);
 }
 
-.color-green {
-  color: rgb(0, 115, 12);
-}
-
 @media (min-width: 1410px) {
-  .desktop {
-    display: block;
-  }
-  .header-container {
-    max-width: 1410px;
-    padding: 0;
-  }
-  .navbar-top {
-    height: 60px;
-  }
-  .addressbar-bgi {
-    width: 25px;
-    height: 25px;
-    background-size: 25px 25px;
-  }
-  header span {
-    display: block;
-  }
-  .selection {
-    width: 66px;
-    height: 25px;
-    font-size: 14px;
-    line-height: 25px;
-    background-size: 12px 6.5px;
-  }
-  .navbar-buttons {
-    width: 80%;
-  }
-  .navbar-phone {
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .nav-btn {
-    display: flex;
-    justify-content: center;
-    order: 2;
-    width: 170px;
-    height: 50px;
-    border-radius: 5px;
-  }
-  .nav-btn:hover span {
-    background-color: white;
-    color: rgb(0, 115, 12);
-  }
-  .navbar-menu-btn {
-    display: none;
-  }
-  .navbar-menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    order: 1;
-    color: rgb(33, 37, 41);
-    /* Button/Button Text */
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: capitalize;
-  }
-  .navbar-menu li:hover {
-    cursor: pointer;
-    color: rgb(0, 115, 12);
-  }
-  .navbar-item:after {
-    content: url(images/arrow-down-black.svg);
-    width: 12px;
-    height: 6.8px;
-  }
-  .navbar-item:hover:after {
-    content: url(images/arrow-down-green.svg);
-  }
-  .solution-container {
-    max-width: 1410px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .bgi-bg {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 1013px;
-    height: 647px;
-  }
-  .solution__text {
-    padding-top: 150px;
-    font-size: 18px;
-    margin: 0;
-    max-width: 600px;
-  }
-  .solution__text-heading {
-    font-size: 20px;
-    width: 560px;
-  }
-  .solution__text-heading h2 {
-    font-size: 58px;
-    line-height: normal;
-    padding: 20px 0;
-  }
-  .bgi-sm {
-    display: none;
-  }
-  .solution__buttons {
-    max-width: 600px;
-    margin: 0;
-  }
-  .solution__buttons--upper {
-    flex-direction: row;
-    gap: 30px;
-    justify-content: left;
-    padding-left: 20px;
-  }
-  .sol-up-btn {
-    width: 175px;
-    height: 60px;
-    font-size: 18px;
-    line-height: 58px;
-  }
-  .how-it-works {
-    color: rgb(103, 103, 103);
-    font-size: 18px;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    color: rgb(33, 37, 41);
-    background-image: url(images/Arrow-rigth-Icon-gray.svg);
-  }
-  .how-it-works:hover {
-    color: rgb(0, 115, 12);
-    background-image: url(images/Arrow-rigth-Icon-green.svg);
-  }
-  .solution__buttons--lower {
-    justify-content: space-evenly;
-    padding-bottom: 60px;
-  }
-  .sol-low-btn {
-    width: 150px;
-    background: none;
-    align-items: center;
-    text-align: left;
-    line-height: 25px;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 0 10px;
-    gap: 10px;
-  }
-  .round-button {
-    background: linear-gradient(180deg, rgb(255, 248, 241), rgb(203, 229, 206));
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 34px;
-    padding: 8px;
-  }
   .services {
     max-width: 1410px;
     padding: 100px 0 0 0;
